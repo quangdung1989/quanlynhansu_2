@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="quangdung.quanlynhansu_2.MainActivity">
+
+
+    <ListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFF"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+
+    <ImageView
+        android:id="@+id/btnAddNew"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-80dp"
+        android:background="@drawable/mybutton_style"
+        android:onClick="true"
+        android:padding="20dp"
+        android:src="@drawable/add" />
+
+
+</LinearLayout>

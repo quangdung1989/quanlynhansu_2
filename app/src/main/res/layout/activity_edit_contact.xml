@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="quangdung.quanlynhansu_2.editContact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgChange"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:onClick="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtEditName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Change Name" />
+
+            <EditText
+                android:id="@+id/edtEditAge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Change Age" />
+
+            <EditText
+                android:id="@+id/edtEditAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Change Address" />
+
+            <EditText
+                android:id="@+id/edtEditPhone"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Change Phone" />
+
+            <EditText
+                android:id="@+id/edtEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Change Email" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Delete Contact" />
+
+
+</LinearLayout>
